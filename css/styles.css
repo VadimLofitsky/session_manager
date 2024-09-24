@@ -1,0 +1,166 @@
+body {
+    width: 750px;
+    min-height: 550px;
+}
+
+#controls {
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0 20px 20px 0;
+    padding: 10px 5px;
+    box-shadow: 0 10px 10px lightgray;
+    background-color: #3e3e3e;
+}
+
+#controls > button {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#btnSaveToFile, #btnLoadFromFile {
+    padding: 2px;
+}
+
+#btnSaveToFile > img, #btnLoadFromFile > img {
+    zoom: 0.7;
+}
+
+.carousel-item {
+    margin: 50px 0 20px 0;
+    /*width: 96%;*/
+    width: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: fixed;
+    top: 50px;
+    width: 3%;
+}
+
+.carousel-control-prev { left: -7px; }
+.carousel-control-next { right: -6px; }
+
+.carousel-control-prev:hover {
+    box-shadow: 10px 0 30px lightcyan;
+}
+
+.carousel-control-next:hover {
+    box-shadow: -10px 0 30px lightcyan;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 3vw;
+    height: 3vw;
+}
+
+.card-header {
+    padding: inherit;
+}
+
+.session-info:hover {
+    cursor: pointer;
+}
+
+.session-info-btn-close {
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    border: solid thin gray;
+    color: beige;
+    background-color: indianred;
+    padding: 0;
+    margin: 5px !important;
+    vertical-align: super;
+    font-size: x-small;
+}
+
+.session-info-btn-close:hover {
+    background-color: red;
+    border: solid thin lightsalmon;
+}
+
+.session-info > .session-info-controls > input[type=checkbox] {
+    display: inline;
+    zoom: 1.5;
+    margin: 8px 5px 3px;
+    border-radius: .25em !important;
+}
+
+.session-info > .session-info-controls > input[type=text] {
+    display: inline;
+    width: auto;
+    zoom: 1.25;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-color: transparent !important;
+    border-radius: .25em !important;
+}
+
+.session-info.active > .session-info-controls > input[type=text] {
+    background-color: var(--bs-primary);
+}
+
+.session-info:not(.active) > .session-info-controls > input[type=text] {
+    color: black !important;
+}
+
+.session-info > .session-info-controls > input[type=text][readonly] {
+    color: beige;
+    user-select: none;
+    cursor: default;
+}
+
+.session-info > .session-info-controls > input[type=text]:not([readonly]) {
+    color: lightcyan;
+    background-color: #00ffff20;
+}
+
+.session-info > .session-info-info {
+    font-size: xx-small;
+    color: lightsteelblue;
+}
+
+.form-check-input:checked {
+    background-color: #4791ff;
+    border-color: #4791ff;
+}
+
+.win-info-checkbox {
+    zoom: 2;
+    margin-left: 7px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline;
+}
+
+.win-info-title {
+    zoom: 2;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.win-info-tab {
+    border: solid thin transparent;
+    border-radius: 10px;
+    margin: 5px 10px 5px 10px;
+}
+
+.win-info-tab > a {
+    color: beige;
+}
+
+.win-info-tab:hover {
+    border: solid thin #5DFF7B40;
+    background-color: #00ffff20;
+}
+
+.win-info-tab > * {
+    margin-left: 10px;
+    margin-right: 10px;
+}

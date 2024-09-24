@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session Manager</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css"/>
+    <script src="bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <script src="js/common.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/clickDispatcher.js"></script>
+
+    <script src="js/entity/baseInfo.js"></script>
+    <script src="js/entity/tabInfo.js"></script>
+    <script src="js/entity/windowInfo.js"></script>
+    <script src="js/entity/sessionInfo.js"></script>
+
+    <script src="js/element/baseInfoEl.js"></script>
+    <script src="js/element/tabInfoEl.js"></script>
+    <script src="js/element/windowInfoEl.js"></script>
+    <script src="js/element/sessionInfoEl.js"></script>
+
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="controls">
+        <button id="btnGetStoredSessions" class="btn btn-primary btn-sm" data-bs-toggle="button">Сохранённые сессии</button>
+        <button id="btnGetCurrentWindows" class="btn btn-primary btn-sm" data-bs-toggle="button">Текущие окна</button>
+        <button id="btnSaveSession" class="btn btn-primary click btn-sm">Сохранить отмеченные</button>
+        <button id="btnOpenWindows" class="btn btn-primary click btn-sm">Открыть отмеченные</button>
+        <button id="btnSaveToFile" class="btn btn-primary click btn-sm"><img src="img/diskette_32_2.png" alt="Сохранить в..." /></button>
+        <button id="btnLoadFromFile" class="btn btn-primary click btn-sm"><img src="img/open_32.png" alt="Загрузить из..." /></button>
+        <input  id="inputFileChooser" type="file" accept=".sm" style="display: none" />
+        <a id="aSaveFile" style="display: none"></a>
+    </div>
+
+    <div id="carousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <div id="sessions" class="list-group">
+                    <h1>Sessions</h1>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <div id="windows"></div>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</body>
+</html>
